@@ -728,4 +728,218 @@ header nav .form i {
 .skills .bullets li:hover {
   background-color: var(--main-color);
 }
+
+.skills .skill .prog-hold {
+  margin-bottom: 50px;
+}
+.skills .skill h4 {
+  margin-bottom: 15px;
+}
+.skills .skill .pro {
+  height: 30px;
+  background-color: #dedadc;
+}
+.skills .skill .pro span {
+  display: block;
+  background-color: var(--main-color);
+  height: 100%;
+  position: relative;
+}
+.skills .skill .pro span::before {
+  content: attr(data-progress);
+  position: absolute;
+  background-color: black;
+  color: white;
+  bottom: 50px;
+  right: -15px;
+  width: 30px;
+  text-align: center;
+  padding: 4px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.skills .skill .pro span::after {
+  content: "";
+  position: absolute;
+  border: 10px solid;
+  border-color: #000 transparent transparent transparent;
+  top: -20px;
+  right: -8px;
+}
+
 /* end skills */
+
+/* start quet */
+.quet {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-image: url(/photo/quote.jpg);
+  background-size: cover;
+  position: relative;
+}
+.quet::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 70%);
+}
+
+.quet .container {
+  text-align: center;
+  color: white;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.quet .container q {
+  font-size: 30px;
+}
+.quet .container p {
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+/* end quet */
+
+/* start price */
+.price {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.price .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.price .list .list-pr {
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fcfcfc;
+}
+
+.price .list .list-pr h2 {
+  margin-bottom: 30px;
+  border-top: 1px solid var(--main-color);
+  padding-top: 20px;
+  font-weight: normal;
+}
+.price .list .list-pr p {
+  border-bottom: 1px solid var(--main-color);
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+.price .list .list-pr p sup {
+  font-size: 35px;
+  margin-left: 10px;
+  padding: 10px;
+  font-weight: 100;
+}
+.price .list .list-pr p span {
+  font-size: 50px;
+  font-weight: bolder;
+}
+.price .list .list-pr button {
+  background-color: white;
+  border: 1px solid var(--main-color);
+  padding: 15px;
+}
+.price .list .list-pr a {
+  text-decoration: none;
+  color: blue;
+}
+.price .container .contact {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 20px;
+}
+.price .link {
+  background-color: var(--main-color);
+  padding: 20px 25px;
+  color: #fff;
+  text-decoration: none;
+  margin: 20px auto;
+  display: block;
+  width: fit-content;
+}
+
+/* end price */
+
+/* start subscribe */
+.subscribe {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-image: url(/photo/subscribe.jpg);
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+.subscribe::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 50%);
+}
+.subscribe .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.subscribe form {
+  display: flex;
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+}
+.subscribe form i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  left: 20px;
+}
+.subscribe form input[type="email"] {
+  background: none;
+  border: 1px solid #fff;
+  padding: 20px 20px 20px 60px;
+  caret-color: var(--main-color);
+  color: #fff;
+  width: calc(100% - 130px);
+  border-right: none;
+}
+.subscribe form input[type="submit"] {
+  background-color: var(--main-color);
+  border: none;
+  width: 130px;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-left: none;
+  color: #fff;
+  cursor: pointer;
+}
+.subscribe form input:focus {
+  outline: none;
+}
+.subscribe form input[type="email"]::placeholder {
+  color: #fff;
+}
+
+.subscribe .container p {
+  margin-left: 50px;
+  line-height: 1.6;
+}
+/* end subscribe */
