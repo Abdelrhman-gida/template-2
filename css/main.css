@@ -49,7 +49,6 @@ body {
 /* start componants */
 .main-heading {
   text-align: center;
-  padding: 100px;
 }
 .main-heading h2 {
   font-weight: normal;
@@ -359,7 +358,7 @@ header nav .form i {
   padding-bottom: var(--section-padding);
   height: 600px;
   position: relative;
-  background-image: url(..//photo/design-features.jpg);
+  background-image: url(../photo/design-features.jpg);
   background-size: cover;
   display: flex;
   align-items: center;
@@ -817,7 +816,6 @@ header nav .form i {
   margin: 0 auto;
   text-align: center;
   padding: 40px 20px;
-  background-color: #fcfcfc;
 }
 
 .price .list .list-pr h2 {
@@ -831,7 +829,9 @@ header nav .form i {
   margin-top: 20px;
   margin-bottom: 30px;
   padding: 20px;
+  background-color: #fcfcfc;
 }
+
 .price .list .list-pr p sup {
   font-size: 35px;
   margin-left: 10px;
@@ -952,35 +952,42 @@ header nav .form i {
 /* end subscribe */
 
 /* start contact */
-.contacts {
+.cont {
   padding-left: var(--section-padding);
   padding-right: var(--section-padding);
+  padding-top: 100px;
 }
-.contacts .content {
+@media (max-width: 767px) {
+  .cont .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.cont .content {
   display: flex;
   justify-content: space-between;
 }
 @media (max-width: 767px) {
-  .contacts .content {
+  .cont .content {
     flex-direction: column;
   }
 }
-.contacts .content form {
+.cont .content form {
   flex-basis: 70%;
 }
-.contacts form .main-input {
+.cont form .main-input {
   width: 100%;
   padding: 20px;
   margin-bottom: 30px;
   border: 1px solid #ccc;
 }
-.contacts form .main-input:focus {
+.cont form .main-input:focus {
   outline: none;
 }
-.contacts form textarea.main-input {
+.cont form textarea.main-input {
   height: 200px;
 }
-.contacts form input[type="submit"] {
+.cont form input[type="submit"] {
   background-color: var(--main-color);
   border: none;
   padding: 20px;
@@ -990,34 +997,34 @@ header nav .form i {
   cursor: pointer;
 }
 
-.contacts .content .info {
+.cont .content .info {
   flex-basis: 25%;
   font-weight: 400;
 }
 @media (max-width: 767px) {
-  .contacts .content .info {
+  .cont .content .info {
     order: -1;
     text-align: center;
   }
 }
-.contacts .content .info h4 {
+.cont .content .info h4 {
   margin-bottom: 30px;
   font-size: 22px;
 }
-.contacts .content .info span {
+.cont .content .info span {
   display: block;
   margin: 5px;
   color: #777;
 }
-.contacts .content .info h4:nth-of-type(2) {
+.cont .content .info h4:nth-of-type(2) {
   margin: 100px 0 30px;
 }
 @media (max-width: 767px) {
-  .contacts .content .info h4:nth-of-type(2) {
+  .cont .content .info h4:nth-of-type(2) {
     margin-top: 20px;
   }
 }
-.contacts .content .info span:nth-of-type(3) {
+.cont .content .info span:nth-of-type(3) {
   line-height: 1.7;
 }
 
